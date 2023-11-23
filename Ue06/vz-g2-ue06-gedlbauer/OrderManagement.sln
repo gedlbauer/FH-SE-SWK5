@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.Domain", "OrderManagement.Domain\OrderManagement.Domain.csproj", "{45749C0E-3CE8-4795-A761-F7BAFB201C3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.Logic", "OrderManagement.Logic\OrderManagement.Logic.csproj", "{56773F9C-A88E-4722-9F8A-EB100079E91F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.Api", "OrderManagement.Api\OrderManagement.Api.csproj", "{338BBF17-5B44-481F-B7C0-AC4F4BF68155}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.JavaScriptClient", "OrderManagement.JavaScriptClient\OrderManagement.JavaScriptClient.csproj", "{19460BEC-0E16-4C5E-9C65-8D12EB78BAAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.CSharpClient", "OrderManagement.CSharpClient\OrderManagement.CSharpClient.csproj", "{19A2803A-0110-4172-8CB6-0FA71227A593}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45749C0E-3CE8-4795-A761-F7BAFB201C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45749C0E-3CE8-4795-A761-F7BAFB201C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45749C0E-3CE8-4795-A761-F7BAFB201C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45749C0E-3CE8-4795-A761-F7BAFB201C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56773F9C-A88E-4722-9F8A-EB100079E91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56773F9C-A88E-4722-9F8A-EB100079E91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56773F9C-A88E-4722-9F8A-EB100079E91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56773F9C-A88E-4722-9F8A-EB100079E91F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{338BBF17-5B44-481F-B7C0-AC4F4BF68155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{338BBF17-5B44-481F-B7C0-AC4F4BF68155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{338BBF17-5B44-481F-B7C0-AC4F4BF68155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{338BBF17-5B44-481F-B7C0-AC4F4BF68155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19460BEC-0E16-4C5E-9C65-8D12EB78BAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19460BEC-0E16-4C5E-9C65-8D12EB78BAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19460BEC-0E16-4C5E-9C65-8D12EB78BAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19460BEC-0E16-4C5E-9C65-8D12EB78BAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A2803A-0110-4172-8CB6-0FA71227A593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A2803A-0110-4172-8CB6-0FA71227A593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A2803A-0110-4172-8CB6-0FA71227A593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A2803A-0110-4172-8CB6-0FA71227A593}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {601F1B94-AE35-4AFD-BD16-1266478DF5F2}
+	EndGlobalSection
+EndGlobal

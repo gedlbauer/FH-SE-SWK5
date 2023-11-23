@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PersonAdmin.Dal.Interface\PersonAdmin.Dal.Interface.csproj" />
+    <ProjectReference Include="..\PersonAdmin.Domain\PersonAdmin.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

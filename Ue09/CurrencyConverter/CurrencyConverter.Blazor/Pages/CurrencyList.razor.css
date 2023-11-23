@@ -1,0 +1,10 @@
+﻿.badge-outline {
+	color: black;
+	border: 1px solid #999;
+	background-color: transparent;
+	font: inherit;
+}
+
+.fixed-width {
+	width: 8em;
+}

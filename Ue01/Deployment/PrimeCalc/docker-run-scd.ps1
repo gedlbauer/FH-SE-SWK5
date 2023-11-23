@@ -1,0 +1,1 @@
+docker run --volume ${pwd}:/app --workdir /app alpine-libstdcpp /app/scd-linux-musl-x64/PrimeCalc.Client 20

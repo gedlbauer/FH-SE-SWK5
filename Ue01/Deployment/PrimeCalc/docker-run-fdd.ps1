@@ -1,0 +1,1 @@
+docker run --volume ${pwd}:/app --workdir /app mcr.microsoft.com/dotnet/runtime:5.0-alpine dotnet /app/fdd/PrimeCalc.Client.dll 20

@@ -1,0 +1,60 @@
+﻿@page "/"
+
+@if (currencies is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+
+    <div class="form-inline mb-3">
+        <div class="form-group mr-2">
+            <label for="source-value">Source Value:</label>
+            <input id="source-value"
+                   value="@sourceValue"
+                   @oninput="e => HandleInput(e.Value.ToString())"
+                   class="text-center form-control ml-2 mr-2 @(inputValid?"":"is-invalid")" />
+            <span>Euro</span>
+        </div>
+        <button type="button" class="btn btn-outline-primary ml-auto" @onclick="RefreshAsync">
+            <span class="oi oi-reload"></span> Refresh
+        </button>
+    </div>
+
+    <div class="row">
+        <table id="currency-table" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>Target Value</th>
+                    @*<th>Action</th>*@
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var currency in currencies)
+                {
+                    <tr>
+                        <td class="align-middle">@currency.Symbol</td>
+                        <td class="align-middle">@currency.Name</td>
+                        <td class="align-middle">@currency.Country</td>
+                        <td class="align-middle">
+                            <span class="badge badge-outline pr-2 fixed-width text-right">
+                                @(inputValid ? (currency.EuroRate * sourceValue).ToString("F2") : "---")
+                            </span>
+                        </td>
+                        @*
+                            <td class="align-middle">
+                              <a href="" class="btn btn-primary btn-sm text-light" role="button">
+                                <span class="oi oi-pencil"></span>
+                              </a>
+                            </td>
+                        *@
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

@@ -1,0 +1,18 @@
+﻿<span>
+    <button style="background-color: dodgerblue; color: white; font-size: 16px" @onclick="OnClick">
+        @randomValue
+    </button>
+</span>
+
+@code {
+    [Parameter]
+    public int Max { get; set; } = 10;
+
+    private int randomValue = 0;
+    private Random random = new Random();
+
+    private void OnClick()
+    {
+        randomValue = random.Next(1, Max);
+    }
+}

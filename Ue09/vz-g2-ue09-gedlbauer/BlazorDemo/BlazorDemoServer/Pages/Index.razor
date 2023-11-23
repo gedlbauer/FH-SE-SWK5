@@ -1,0 +1,22 @@
+﻿@page "/"
+
+@using BlazorDemoServer.Components;
+
+<style>
+    body { margin: 20px; }
+</style>
+
+<h1>Test Blazer Components</h1>
+
+<div>
+    <span style="font-size: 15pt;">Random number generator 1:</span>
+    <RandomButton/>
+</div>
+
+<div>
+    <span style="font-size: 15pt;">Random number generator 2:</span>
+    <RandomButton Max="200"/>
+</div>
+@code {
+
+}

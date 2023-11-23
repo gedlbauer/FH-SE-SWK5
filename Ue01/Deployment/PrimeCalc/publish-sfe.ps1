@@ -1,0 +1,1 @@
+dotnet publish PrimeCalc.Client --configuration Release --runtime win-x64 --output $pwd/sfe -p:PublishSingleFile=true -p:PublishTrimmed=true

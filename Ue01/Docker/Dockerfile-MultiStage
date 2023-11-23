@@ -1,0 +1,13 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine as builder
+COPY ./PrimeCalc.Client /src/PrimeCalc.Client
+COPY ./PrimeCalc.Math /src/PrimeCalc.Math
+WORKDIR /src
+RUN dotnet build --configuration Release PrimeCalc.Math \
+ && dotnet build --configuration Release PrimeCalc.Client \
+ && dotnet publish PrimeCalc.Client --configuration Release --output /src/publish
+
+# This stage uses the output form the builder stage
+FROM mcr.microsoft.com/dotnet/runtime:5.0-alpine
+COPY --from=builder /src/publish /app
+WORKDIR /app
+ENTRYPOINT ["dotnet", "/app/PrimeCalc.Client.dll"]
